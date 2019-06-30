@@ -3,7 +3,7 @@
 <html>
   <h1>Edit Article</h1>
   
-  <form method="/articles/#{article.id}" action="/edit">
+  <form method="post" action="/articles/<%= @article.id %>">
     <input type="hidden" name="_method" value="patch">
     <label>Article Title: </label><br>
     <input type="text" id="article_title" name="title" value="<%= @article.title %>"></p>
