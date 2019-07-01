@@ -10,7 +10,7 @@
     
     <label>Article Content: </label><br>
     <textarea id="content" name="article[content]" rows="4" cols="50" value="<%= @article.content %>"></textarea></p>
-    <button type="submit">Edit <%= @article.title %></button>
+    <input type="submit"Edit value="Edit <%= @article.title %>" >
   </form>
   
   <form method="post" action="/articles/<%= @article.id %>">
